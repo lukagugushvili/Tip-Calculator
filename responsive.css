@@ -1,0 +1,30 @@
+@media (max-width: 850px) {
+  .final-results-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 609px) {
+  .wrapper {
+    align-items: flex-end;
+    height: auto;
+  }
+  h1 {
+    margin-top: 10%;
+  }
+  .calculator-box {
+    padding: 7% 2%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .right-content {
+    padding: 5%;
+  }
+  .final-results-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+}

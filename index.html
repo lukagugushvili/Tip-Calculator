@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="forJs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>SPLIT <span>TITER</span></h1>
+        <div class="calculator-box">
+          <div class="left-content">
+            <div class="bill-content">
+              <label>Bill</label>
+              <input class="bill-inp" type="number" placeholder="0" value="" />
+            </div>
+            <div class="percent-btn-content">
+              <label>Select Tip %</label>
+              <div class="buttons-box">
+                <button id="percents" value="5">5%</button>
+                <button id="percents" value="10">10%</button>
+                <button id="percents" value="15">15%</button>
+                <button id="percents" value="25">25%</button>
+                <button id="percents" value="50">50%</button>
+                <input
+                  id="percent-inp"
+                  type="number"
+                  value=""
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <div class="number-of-people-content">
+              <div class="just-box">
+                <label>Number of People</label>
+                <p class="error-text">Can’t be zero</p>
+              </div>
+              <input
+                class="number-of-people-input"
+                type="number"
+                value=""
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="final-results-content">
+              <div class="title">
+                <h4>Tip Amount</h4>
+                <span>/ person</span>
+              </div>
+              <div class="amount">
+                <h3 id="tip-amount">$0.00</h3>
+              </div>
+            </div>
+            <div class="final-results-content">
+              <div class="title">
+                <h4>Total</h4>
+                <span>/ person</span>
+              </div>
+              <div class="amount">
+                <h3 id="total">$0.00</h3>
+              </div>
+            </div>
+            <div class="reset-btn">
+              <button id="reset" onclick="resetValues()">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

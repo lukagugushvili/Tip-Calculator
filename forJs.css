@@ -1,0 +1,14 @@
+.greenLine {
+  transition: border 0.3s ease;
+  border: 2px solid rgba(38, 194, 174, 1);
+}
+
+.redLine {
+  transition: border 0.3s ease;
+  border: 2px solid rgba(225, 112, 82, 1);
+}
+
+.btnColorAct {
+  color: rgb(0, 71, 75);
+  background-color: rgb(159, 232, 223);
+}
