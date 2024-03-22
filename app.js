@@ -31,7 +31,8 @@ numberOfPeopleInput.addEventListener("input", (e) => {
   } else {
     return;
   }
-  const totalProcessing = tipAmountProcessing * numberOfPeopleInputValue;
+  const totalProcessing =
+    (billInpValue * tipAmountProcessing) / numberOfPeopleInputValue;
 
   // lets show percents in dom
   tipAmount.innerHTML = `$${tipAmountProcessing}`;
